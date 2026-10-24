@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>黑料吃瓜网最新地址</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon-192.png">
+</head>
+<body>
+  <button type="button" id="desktop-install" hidden>添加黑料吃瓜网到桌面</button>
+  <div id="main"></div>
+  <script>
+  (function (w, d) {
+    var deferred;
+    w.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      deferred = e;
+      var btn = d.getElementById('desktop-install');
+      if (btn) btn.hidden = false;
+    });
+    d.addEventListener('click', function (e) {
+      if (!e.target || e.target.id !== 'desktop-install' || !deferred) return;
+      var promptEvent = deferred;
+      deferred = null;
+      e.target.hidden = true;
+      promptEvent.prompt();
+    });
+  })(window, document);
+  </script>
+  <script src="publish.js?20261023"></script>
+</body>
+</html>
