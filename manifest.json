@@ -1,15 +1,15 @@
 {
-  "id": "/?app=hlcgw-homescreen",
+  "id": "/test-url/?app=hlcgw-homescreen",
   "name": "黑料吃瓜网",
   "short_name": "黑料吃瓜网",
   "lang": "zh-CN",
-  "start_url": "/?utm_source=pwa&utm_medium=homescreen",
-  "scope": "/",
+  "start_url": "/test-url/?utm_source=pwa&utm_medium=homescreen",
+  "scope": "/test-url/",
   "display": "standalone",
   "background_color": "#2c2a2a",
   "theme_color": "#2c2a2a",
   "icons": [
-    {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
+    {"src": "/test-url/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/test-url/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}
   ]
 }
